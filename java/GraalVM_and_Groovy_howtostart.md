@@ -349,4 +349,4 @@ sys	0m0.010s
 
 我靠，太令人兴奋了，才27毫秒。
 
-![](https://github.com/davidzou/blog/tree/master/java/excutiontime.png)
+![](excutiontime.png)
