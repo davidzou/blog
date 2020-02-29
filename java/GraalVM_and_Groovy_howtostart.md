@@ -3,11 +3,14 @@
 这篇博客文章记录了运行编译成GraalVM本机映像的Groovy代码的非常简单的用例。它会让你很好地理解如何开始，以及如何解决当你开始玩自己的例子时，你可能会面临的问题。
 
 ## 环境安装
-我将使用以下工具:
-GraalVM (20.0.0)
-Groovy (2.5.9)
+
+> 我将使用以下工具:
+
+* GraalVM (20.0.0)
+* Groovy (2.5.9)
 
 让我们确保使用正确的GraalVM Java发行版。
+
 * 检查java版本
 ```
 zzw:Home zzw$ java -version
@@ -51,7 +54,7 @@ class RandomNumber {
     }
 }
 ```
-GraalVM更喜欢静态编译[2]，因此我们需要将Groovy从动态编译切换到静态编译。我们可以简单地将@groovy.transform.CompileStatic注释放在RandomNumber.groovy文件中的类定义上，或者创建一个编译器配置文件，将此注释添加到所有类中。
+GraalVM更喜欢静态编译，因此我们需要将Groovy从动态编译切换到静态编译。我们可以简单地将@groovy.transform.CompileStatic注释放在RandomNumber.groovy文件中的类定义上，或者创建一个编译器配置文件，将此注释添加到所有类中。
 
 ###### compiler.groovy
 ```
