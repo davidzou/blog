@@ -350,3 +350,52 @@ sys	0m0.010s
 我靠，太令人兴奋了，才27毫秒。
 
 ![](excutiontime.png)
+
+### 自动反射配置
+我想大家都同意，上面这种手动反射配置非常烦人。我们向配置中添加了一个类，然后重新编译本机映像，以获得另一个缺少的类的异常。对于这样一个简单的程序，我们必须向反射配置添加三个类。我们可以想象，在一个更复杂的例子中，效率会变的如何低下。
+
+幸运的是，有一个解决这个问题的办法。GraalVM的JDK 包含 ```native-image-agent``, 这是一个Java代理，能用于GraalVM的JDK运行我们的程序时使用代码到来源。它能为我们探测到所有的反射（不仅如此）。
+
+我们试试吧。首先，我们需要将编译好的Groovy代码作为启用了native-image-agent的Java程序运行。
+
+```
+	zzw:groovy_and_graalvm zzw$ tree conf
+	conf
+	├── jni-config.json
+	├── proxy-config.json
+	├── reflect-config.json
+	└── resource-config.json
+```
+
+如果打开conf/reflect-config.json文件，您将看到它包含为反射访问配置的大量类。（在我的例子中，这个文件有578行。）
+
+我们要做的最后一件事是删除-H:ReflectionConfigurationFiles参数并改用-H:ConfigurationFileDirectories参数。它不仅加载反射配置文件，还加载代理、JNI和资源的其余三个配置。
+
+```
+zzw:groovy_and_graalvm zzw$ native-image --allow-incomplete-classpath --report-unsupported-elements-at-runtime --initialize-at-build-time --initialize-at-run-time=org.codehaus.groovy.control.XStreamUtils,groovy.grape.GrapeIvy --no-fallback --no-server -cp ".:$GROOVY_HOME/lib/groovy-2.5.9.jar" -H:ConfigurationFileDirectories=conf RandomNumber
+
+[randomnumber:25458]    classlist:  13,064.76 ms,  1.48 GB
+[randomnumber:25458]        (cap):   4,255.09 ms,  1.48 GB
+[randomnumber:25458]        setup:  10,399.56 ms,  1.48 GB
+[randomnumber:25458]   (typeflow):  49,725.16 ms,  2.85 GB
+[randomnumber:25458]    (objects):  50,176.33 ms,  2.85 GB
+[randomnumber:25458]   (features):   3,838.72 ms,  2.85 GB
+[randomnumber:25458]     analysis: 105,288.49 ms,  2.85 GB
+[randomnumber:25458]     (clinit):   1,066.71 ms,  3.83 GB
+[randomnumber:25458]     universe:  14,101.79 ms,  3.83 GB
+[randomnumber:25458]      (parse):  11,743.04 ms,  3.83 GB
+[randomnumber:25458]     (inline):   9,946.67 ms,  3.89 GB
+[randomnumber:25458]    (compile):  75,234.97 ms,  3.94 GB
+[randomnumber:25458]      compile: 100,240.38 ms,  3.94 GB
+[randomnumber:25458]        image:   8,620.27 ms,  3.94 GB
+[randomnumber:25458]        write:   2,989.65 ms,  3.94 GB
+[randomnumber:25458]      [total]: 256,066.97 ms,  3.94 GB
+```
+同样我们来看看是否可以执行
+
+```
+zzw:groovy_and_graalvm zzw$ ./randomnumber 
+The random number is: 182
+The doubled sum of numbers between 0 and 182 is 33306
+```
+大功告成！！！
