@@ -75,23 +75,29 @@ brew install apkinfo
 	hellowrold.1
 
 	```
-		.\" Manpage for nuseradd.
-		.\" Contact vivek@nixcraft.net.in to correct errors or typos.
-		.TH man 8 "06 May 2010" "1.0" "nuseradd man page"
-		.SH NAME
-		nuseradd \- create a new LDAP user
-		.SH SYNOPSIS
-		nuseradd [USERNAME]
-		.SH DESCRIPTION
-		nuseradd is high level shell program for adding users to LDAP server.  On Debian, administrators should usually use nuseradd.debian(8) instead.
-		.SH OPTIONS
-		The nuseradd does not take any options. However, you can supply username.
-		.SH SEE ALSO
-		useradd(8), passwd(5), nuseradd.debian(8)
-		.SH BUGS
-		No known bugs.
-		.SH AUTHOR
-		Vivek Gite (vivek@nixcraft.net.in)
+		.\" Manpage for helloworld.
+	    .\" Contact wearecisco@gmail.com to correct errors or typos.
+	    .TH man 8 "2020.03.02" "0.0.1" " helloworld man page"
+	    .SH NAME
+	    hello
+	    .SH SYNOPSIS
+	    apkinfo [APK_FILE]
+	    .SH DESCRIPTION
+	     hello world!
+	    .SH OPTIONS
+	    .TP
+	    .PD 0
+	    .BI \-h
+	    .TP
+	    .PD
+	    .B \-\-help
+	    show help and xxx
+	    .SH SEE ALSO
+
+	    .SH BUGS
+	    No known bugs.
+	    .SH AUTHOR
+	     DavidZou (wearecisco@gmail.com)
 	```
 
 4. 创建homewbrew描述文件
