@@ -1,8 +1,13 @@
-# ls命令
+ls
+====
 
-列出目录内容
+***
+
+### 语法
 
 `ls [选项] [参数]`
+
+***
 
 ### 参数
 
@@ -22,7 +27,7 @@
 * -s 	–size 以块大小为单位列出所有文件的大小
 * -S 	根据文件大小排序
 * -t 	以文件修改时间排序
-* -u 	配合 -lt:显示访问时间而且依访问时间排序 
+* -u 	配合 -lt:显示访问时间而且依访问时间排序
 	  	配合 -l:显示访问时间但根据名称排序
 		否则：根据访问时间排序
 * -U 	不进行排序;依文件系统原有的次序列出项目
@@ -30,12 +35,14 @@
 * –help 显示此帮助信息并离开
 * –version 显示版本信息并离开
 
+***
+
 ### Example
 
 * ```ls```
 
 	平时打的最多的就是他了，简单的显示当前目录下的文件内容
-	
+
 	```
 	zzw:dailyshell davidzou$ ls
 	adir         afile        asubfilelink bfile
@@ -44,7 +51,7 @@
 * ```ls -al```
 
 	列出所有的内容
-	
+
 	```
 	zzw:dailyshell davidzou$ ls -al
 	drwxr-xr-x  6 davidzou  staff  192 12  7 01:08 .
@@ -69,7 +76,7 @@
 * ```ls -tl```
 
 	列出所有内容，并以时间排序（倒序）
-	
+
 	```
 	zzw:dailyshell davidzou$ ls -tl
 	lrwxr-xr-x  1 davidzou  staff   13 12  7 01:08 asubfilelink -> adir/asubfile
@@ -81,7 +88,7 @@
 * ```ls -trl```
 
 	列出所有内容，并以时间排序（正序）
-	
+
 	```
 	zzw:dailyshell davidzou$ ls -trl
 	-rw-r--r--  1 davidzou  staff   14 12  7 01:07 afile
@@ -89,27 +96,27 @@
 	drwxr-xr-x  4 davidzou  staff  128 12  7 01:07 adir
 	lrwxr-xr-x  1 davidzou  staff   13 12  7 01:08 asubfilelink -> adir/asubfile
 	```
-	
+
 * ```ls -lR```
 
 	列出所有内容，包含子目录下的内容
-	
+
 	```
 	zzw:dailyshell davidzou$ ls -lR
 	drwxr-xr-x  4 davidzou  staff  128 12  7 01:07 adir
 	-rw-r--r--  1 davidzou  staff   14 12  7 01:07 afile
 	lrwxr-xr-x  1 davidzou  staff   13 12  7 01:08 asubfilelink -> adir/asubfile
 	-rw-r--r--  1 davidzou  staff   14 12  7 01:07 bfile
-	
+
 	./adir:
 	-rw-r--r--  1 davidzou  staff  17 12  7 01:07 asubfile
 	-rw-r--r--  1 davidzou  staff  17 12  7 01:07 bsubfile
 	```
-	
+
 * ```ls -gl```
 
 	列出所有内容，但没有所有者一栏
-	
+
 	```
 	zzw:dailyshell davidzou$ ls -gl
 	drwxr-xr-x  4 staff  128 12  7 01:07 adir
@@ -117,11 +124,11 @@
 	lrwxr-xr-x  1 staff   13 12  7 01:08 asubfilelink -> adir/asubfile
 	-rw-r--r--  1 staff   14 12  7 01:07 bfile
 	```
-	
+
 * ```ls -lh```
-	
+
 	列出所有内容，文件大小以单位表示
-	
+
 	```
 	zzw:dailyshell davidzou$ ls -hl
 	drwxr-xr-x  4 davidzou  staff   128B 12  7 01:07 adir
@@ -129,20 +136,20 @@
 	lrwxr-xr-x  1 davidzou  staff    13B 12  7 01:08 asubfilelink -> adir/asubfile
 	-rw-r--r--  1 davidzou  staff    14B 12  7 01:07 bfile
 	```
-	
+
 * ```ls -m```
 
 	列出所有内容，以逗号分隔
-	
+
 	```
 	zzw:dailyshell davidzou$ ls -m
 	adir, afile, asubfilelink, bfile
 	```
-	
+
 * ```ls -Sl```
 
 	列出所有内容，以文件大小排列
-	
+
 	```
 	zzw:dailyshell davidzou$ ls -Sl
 	drwxr-xr-x  4 davidzou  staff  128 12  7 01:07 adir
@@ -150,7 +157,7 @@
 	-rw-r--r--  1 davidzou  staff   14 12  7 01:07 bfile
 	lrwxr-xr-x  1 davidzou  staff   13 12  7 01:08 asubfilelink -> adir/asubfile
 	```
-	
+
 * ```ls -1```
 
 	列出所有，但每行只显示1个

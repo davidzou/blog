@@ -349,7 +349,7 @@ sys	0m0.010s
 
 我靠，太令人兴奋了，才27毫秒。
 
-![](excutiontime.png)
+![](images/excutiontime.png)
 
 ### 自动反射配置
 我想大家都同意，上面这种手动反射配置非常烦人。我们向配置中添加了一个类，然后重新编译本机映像，以获得另一个缺少的类的异常。对于这样一个简单的程序，我们必须向反射配置添加三个类。我们可以想象，在一个更复杂的例子中，效率会变的如何低下。
@@ -394,7 +394,7 @@ zzw:groovy_and_graalvm zzw$ native-image --allow-incomplete-classpath --report-u
 同样我们来看看是否可以执行
 
 ```
-zzw:groovy_and_graalvm zzw$ ./randomnumber 
+zzw:groovy_and_graalvm zzw$ ./randomnumber
 The random number is: 182
 The doubled sum of numbers between 0 and 182 is 33306
 ```
