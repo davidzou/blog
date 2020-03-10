@@ -97,7 +97,7 @@ cp [options] files directory
     -rw-r--r--   1 zzw  staff    0  3 10 00:34 file4
     ```
 
-    当然现实中有很过这种文件的话，一个个列举是很累的，那么就需要使用到通配符来解决了，省力有省事。
+    当然现实中有很多这种文件的话，一个个列举是很累的，那么就需要使用到通配符来解决了，省力有省事。
 
     ```
     zzw:temp zzw$ cp file* allfiles/
