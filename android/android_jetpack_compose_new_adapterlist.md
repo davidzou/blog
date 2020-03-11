@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 
 运行后如下图：
 
-![](android_jetpack_sample.png)
+![](android_jetpack_compose_sample.png)
 
 ### AdapterList（重点）
 
