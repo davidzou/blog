@@ -17,4 +17,4 @@ GitHub官方客户端测试版试用
 
 * IOS 进入[官网](https://github.com/mobile)提交申请等待
 
-![](githubmobileindex.png)
+![](images/githubmobileindex.png)

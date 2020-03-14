@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 
 运行后如下图：
 
-![](android_jetpack_compose_sample.png)
+![](images/android_jetpack_compose_sample.png)
 
 ### AdapterList（重点）
 
@@ -104,6 +104,6 @@ class MainActivity : AppCompatActivity() {
 
 在上面的例子中，可以看到传递的是一个整数列表，在lambda中，根据需要操作UI。上面代码片段的输出在下面的GIF中给出。
 
-![](adnroid_jetpack_compose_adapterlist.gif)
+![](images/adnroid_jetpack_compose_adapterlist.gif)
 
 我相信到现在大家一定已经意识到用AdapterList在Jetpack Compose中创建一个类似RecyclerView的列表是多么容易。如果您尝试使用RecyclerView来实现相同的结果，那么您就知道还需要编写多少代码。
