@@ -1,7 +1,7 @@
 最好的Java5种遍历HashMap数据的写法
 ====
 
-### 通过EntrySet的迭代器遍历 [^ codesource]
+### 通过EntrySet的迭代器遍历
 
 ***
 
@@ -145,4 +145,6 @@ TIOBE Index for March 2020:
 10. GO
 ```
 
-[^ codesource]： 示例代码在[这里](https://github.com/davidzou/WonderingWall/tree/master/challenge/how_iterate_hashmap_in_java)
+***
+
+示例代码在[这里](https://github.com/davidzou/WonderingWall/tree/master/challenge/how_iterate_hashmap_in_java)
