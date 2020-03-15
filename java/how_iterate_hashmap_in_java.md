@@ -1,7 +1,7 @@
 最好的Java5种遍历HashMap数据的写法
 ====
 
-### 通过EntrySet的迭代器遍历
+### 通过EntrySet的迭代器遍历 [^ codesource]
 
 ***
 
