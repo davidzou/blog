@@ -14,7 +14,7 @@ while (iterator.hasNext()) {
 }
 ```
 
-输出结果
+输出结果如下：
 
 ```
 zzw:how_iterate_hashmap_in_java zzw$ java IterateHashMapExample 1
@@ -44,7 +44,7 @@ while (iterator.hasNext()) {
 }
 ```
 
-输出结果
+输出结果如下：
 
 ```
 zzw:how_iterate_hashmap_in_java zzw$ java IterateHashMapExample 2
@@ -72,7 +72,7 @@ for (Map.Entry < Integer, String > entry: coursesMap.entrySet()) {
 }
 ```
 
-输出结果
+输出结果如下：
 
 ```
 zzw:how_iterate_hashmap_in_java zzw$ java IterateHashMapExample 3
@@ -100,7 +100,7 @@ coursesMap.forEach((key, value) -> {
 });
 ```
 
-输出结果
+输出结果如下：
 
 ```
 zzw:how_iterate_hashmap_in_java zzw$ java IterateHashMapExample 4
@@ -128,7 +128,7 @@ coursesMap.entrySet().stream().forEach((entry) -> {
 });
 ```
 
-输出结果
+输出结果如下：
 
 ```
 zzw:how_iterate_hashmap_in_java zzw$ java IterateHashMapExample 5
@@ -147,4 +147,6 @@ TIOBE Index for March 2020:
 
 ***
 
-示例代码在[这里](https://github.com/davidzou/WonderingWall/tree/master/challenge/how_iterate_hashmap_in_java)
+![](images/how_iterate_hashmap_in_java.png)
+
+完整示例代码在[这里](https://github.com/davidzou/WonderingWall/tree/master/challenge/how_iterate_hashmap_in_java)
