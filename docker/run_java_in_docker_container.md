@@ -23,7 +23,7 @@
 
 ***
 
-### 编写Dockerfile [^ source]
+### 编写Dockerfile [^source]
 
 这里使用openjdk，历史的原因现在openjdk和oraclejdk基本一致了。
 
@@ -100,4 +100,4 @@ CMD ["java", "Main"]
 
 ***
 
-[^ source]: [相关代码](https://github.com/davidzou/WonderingWall/tree/master/challenge/run_java_in_docker)
+[^source]: [相关代码](https://github.com/davidzou/WonderingWall/tree/master/challenge/run_java_in_docker)
