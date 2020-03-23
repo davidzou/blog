@@ -10,13 +10,13 @@ Mac命令行工具 HomeBrew
 	https://brew.sh/
 
 ##### Step 2： 打开Terminal 敲命令
-	
+
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	
+
 	。。。
-	
-	安装好了。^_^ 好了一个强大的软件库摆在你面前了。
-	
+
+	安装好了。^\_^ 好了一个强大的软件库摆在你面前了。
+
 
 “喂， Mac下不是有App Store了嘛，干嘛要这个” By SomeBody
 
@@ -80,7 +80,7 @@ build_error: 0 (30 days)
 就是他了，果断安装. 安装的过程会对库进行一次升级检验（社区活跃的软件就会隔三差五的更新，是不是服务很好，总是用新版本。）记得之前WindowXP刚出来时，老外那边还在用Win98，老外那羡慕的眼神呀--中国人真富有。
 
 ```
-brew install unrar	
+brew install unrar
 ```
 
 "我靠，爽就这么简单。" By Somebody
@@ -94,12 +94,3 @@ brew update && brew upgrade
 “没了，操作结束了？" By Somebody
 
 "对呀，麻雀虽小五脏俱全。几个命令已经够用了，如过想自己发布命令，那么就需要帮助手册中Troubleshooting和Contributing的命令了” By Myself
-
-
-
-
-
-
-
-
-
