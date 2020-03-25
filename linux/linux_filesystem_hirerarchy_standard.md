@@ -5,7 +5,7 @@
 
 ### 历史
 
-Linux的开放导致了很多的“发行版”，导致的一个最严重的问题就是文件系统布局的不一致。为了有一个公认的标准，Linux社群于1993年发起了一个计划，打算定制一套适合一般发行版的文件系统布局标准。该计划于1994年形成，称为Linux Filesystem Standard（简称FSSTND）。这份草案标准获得了广泛的响应，甚至被认为应该被提升到更高的层次，成为所有Unix-like操作系统的标准。后来消减了其中原本针对Linux而设计的部分，成为后来的[Filesystem Hierarchy Standard（简称FHS）](http://www.pathname.com/fhs/)，2004年发布了2.3版本。
+Linux的开放导致了很多的“发行版”，导致的一个最严重的问题就是文件系统布局的不一致。为了有一个公认的标准，Linux社群于1993年发起了一个计划，打算定制一套适合一般发行版的文件系统布局标准。该计划于1994年形成，称为Linux Filesystem Standard（简称FSSTND）。这份草案标准获得了广泛的响应，甚至被认为应该被提升到更高的层次，成为所有Unix-like操作系统的标准。后来消减了其中原本针对Linux而设计的部分，成为后来的[Filesystem Hierarchy Standard（简称FHS）](http://www.pathname.com/fhs/)，2004年发布了2.3版本至今。
 
 ***
 
