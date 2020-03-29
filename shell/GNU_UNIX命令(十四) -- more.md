@@ -326,7 +326,7 @@ more是一个过滤器，用于一次一屏的对文本进行分页。不过它�
 
 * `more --version`
 
-    看下版本信息，我这里用了ubuntu的docker镜像。
+看下版本信息，我这里用了自建ubuntu的docker镜像。Dockerfile[这里查看](https://github.com/davidzou/WonderingWall/tree/master/docker/ubuntu-with-man)
 
     ```
     root@50d4ca255e33:/# more --version
