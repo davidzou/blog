@@ -6,7 +6,7 @@ Null Safety in Dart --- Introduction （Dart空安全介绍）
 
 ### 介绍
 
-一般来说，变量储存了某些值。例如整数可以是0，42-2；一个String可以是 hello world，或者其他什么的内容。
+一般来说，变量储存了某些值。例如整数可以是0, 42, -2；一个String可以是 hello world，或者其他什么的内容。
 
 ```
 // In null-safe Dart, none of these can ever be null.
@@ -14,7 +14,7 @@ var i = 42; // Inferred to be an int.
 String name = getFileName();
 final b = Foo();
 ```
-但是对大部分包括Dart在内的程式语言而言，还有一种空值的概念，也就是没有值。
+但是对大部分包括Dart在内的编程语言而言，还有一种空值的概念，也就是没有值。
 例如，我喜欢的颜色这个变量，可以是空值，这是合理的。有些人就是没有喜欢的颜色。
 
 ```
