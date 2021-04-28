@@ -51,13 +51,14 @@ final b = Foo();
 
 许多其他的程序语言并没有靠谱的空安全机制。经常要在运行期间进行检查。
 
-|:--:|:--:|:--:|
-|C#|X||
+||NullSafety|Sound NullSafety|
+|:---:|:---:|:---:|
+|C#|X| |
 |Dart|X|X|
-|Java|X||
-|Kotlin|X||
+|Java|X| |
+|Kotlin|X| |
 |Swift|X|X|
-|TypeScript|X||
+|TypeScript|X| |
 
 而且Dart与Swift共享靠谱的空安全机制，其他语言可说不准了。由于Dart的空安全机制很靠谱，它还可以令你的程序运行得更快。不但更安全，而且更迅速。
 各位程序员，这对你来说代表什么呢？🚀
