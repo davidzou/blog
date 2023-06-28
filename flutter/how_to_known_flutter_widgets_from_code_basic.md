@@ -8,8 +8,8 @@
 <!-- PAINTING NODES -->
 * [Opacity]
 * [ShaderMask]
-* [BackdropFilter]
-* [CustomPaint]
+* [BackdropFilter](basic/backdropfilter.md)
+* [CustomPaint](basic/custompaint.md)
 * [ClipRect]
 * [ClipRRect]
 * [ClipOval]
@@ -55,7 +55,7 @@
 * [Row]
 * [Column]
 * [Flexible]
-* [Expanded]
+* [Expanded](basic/expanded.md)
 * [Wrap]
 * [Flow]
 * [RichText]
