@@ -146,7 +146,7 @@ setBackground(definitelyColor！);
 
 > 旧项目迁移
 
-如果有兴趣可以看下Dart提供了命令行工具，来转化你的就代码到NullSafety的迁移。
+如果有兴趣可以看下Dart提供了命令行工具，来转化你的旧代码到NullSafety的迁移。
 
 ```
 dart migrate 
