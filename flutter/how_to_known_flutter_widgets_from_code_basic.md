@@ -6,14 +6,14 @@
 <!-- BIDIRECTIONAL TEXT SUPPORT-->
 * [Directionality](basic/directionality.md) 
 <!-- PAINTING NODES -->
-* [Opacity]
-* [ShaderMask]
+* [Opacity](basic/opacity.md)
+* [ShaderMask](basic/shadermask.md)
 * [BackdropFilter](basic/backdropfilter.md)
 * [CustomPaint](basic/custompaint.md)
-* [ClipRect]
-* [ClipRRect]
-* [ClipOval]
-* [ClipPath]
+* [ClipRect](basic/cliprect.md)
+* [ClipRRect](basic/cliprrect.md)
+* [ClipOval](basic/clipoval.md)
+* [ClipPath](basic/clippath.md)
 * [PhysicalModel]
 * [PhysicalShape]
 <!-- POSITIONING AND SIZING NODES -->
@@ -56,7 +56,7 @@
 * [Column]
 * [Flexible]
 * [Expanded](basic/expanded.md)
-* [Wrap]
+* [Wrap](basic/wrap.md)
 * [Flow]
 * [RichText]
 * [RawImage]
